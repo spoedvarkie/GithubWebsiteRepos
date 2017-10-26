@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bookmerk - Adverts</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Login and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                
+				<ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" onclick="window.location = 'Login.html'">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="window.location = 'Register.html'">Register</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Adverts</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" onclick="window.location = 'Profile.html'">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            
+                <h1>Advert search</h1>
+            
+			<!-- Search -->
+			<form class="page-header" role="search" action="SearchTextbook.php" method="post">
+				<div class="form-group">
+					<input type="text" class="form-control" id="search_content">
+				</div>
+				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="myFunction();"></span> Search</button><!-- php implementation on function call-->
+			</form>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row --><!--duplicate div class='row' per row,2 items displayed-->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img src="https://i.pinimg.com/originals/81/5e/c7/815ec766b4ad3e3858817252924ff136.jpg" alt="Image Error(Link)" width="200" height="250"><!-- not working with url, need uri -->
+                </a>
+                <h3>
+                    <a href="#">Database Systems</a><!-- get values from db -->
+                </h3>
+                <p>Textbook still in excellent condition. No pen marks or damaged pages.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="https://i.pinimg.com/originals/81/5e/c7/815ec766b4ad3e3858817252924ff136.jpg" alt="Image Error" width="200" height="250">
+                </a>
+                <h3>
+                    <a href="#">Elementary Statistical Methods</a><!-- get values from db -->
+                </h3>
+                <p>Textbook still in good condition. It has no pen marks, but has minor damages.</p>
+            </div>
+        </div>
+        <!-- /.row -->        
+		
+        <!-- Page numbers at the bottom -->
+        <!--<div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">Prev</a><!-- &laquo; for arrows--
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>                    
+                    <li>
+                        <a href="#">Next</a><!-- &raquo; for arrows --
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->	
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		function myFunction(){
+			alert("function works");
+		}
+		
+	</script>
+
+</body>
+
+</html>
